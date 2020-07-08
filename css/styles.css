@@ -12,7 +12,17 @@ html, body {
   .bs-example{
     margin: 20px;
 }
-  
+#container {
+	margin: 50px 0 0 0;
+	text-align: center;
+}
+
+#text {
+	display: inline-block;
+	color: #2980b9;
+	border-right: 3px solid #2980b9;
+}
+
   /* header */
   
   .header {
