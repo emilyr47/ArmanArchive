@@ -51,7 +51,7 @@ function Delete() {
 		if(_PART == (_CONTENT.length - 1))
         return setTimeout,
         document.getElementById("text").innerHTML = "Welcome to the Arman Archive",
-        document.getElementById("fade-button").innerHTML = "<a href='images/BA_resume.pdf' target= '_blank' style= 'margin-right: 5px;'>Download Resume</a> <a href='writing-samples.html' style= 'margin-left: 5px;'>View My Work</a>";
+        document.getElementById("fade-button").innerHTML = "<a href='images/BA_resume.pdf' target= '_blank' style= 'margin-right: 5px; font-size: 30px;'>Download Resume</a> <a href='writing-samples.html' style= 'margin-left: 5px; font-size: 30px;'>View My Work</a>";
 
 
 		else

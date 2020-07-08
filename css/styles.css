@@ -1,9 +1,16 @@
-html, body {
+/* html, body {
     margin: 0;
     font-family: Helvetica, sans-serif;
     background-color: #E9CBAF;
     height: 100%;
-  }
+  } */
+
+#body-home {
+    min-height:100%;
+    background:linear-gradient(0deg, rgba(209, 204, 206, 0.3), rgba(206, 200, 204, 0.3)), url(../images/daniel-alvasd-_RgeLpaIp7k-unsplash.jpg);
+    background-size:cover;
+    
+}
   
   a {
     color: #131112;
@@ -25,7 +32,7 @@ html, body {
 }
 
 #fade-button {
-    margin-top: 150px;
+    margin-top: 70px;
     margin-left: 30px;
     margin-right: 30px;
 }
