@@ -50,7 +50,9 @@ function Delete() {
 		// If last sentence then display the first one, else move to the next
 		if(_PART == (_CONTENT.length - 1))
         return setTimeout,
-        document.getElementById("text").innerHTML = "Arman Archive";
+        document.getElementById("text").innerHTML = "Welcome to the Arman Archive",
+        document.getElementById("fade-button").innerHTML = "<a href='images/BA_resume.pdf' target= '_blank' style= 'margin-right: 5px;'>Download Resume</a> <a href='writing-samples.html' style= 'margin-left: 5px;'>View My Work</a>";
+
 
 		else
 			_PART++;
