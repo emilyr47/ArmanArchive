@@ -51,7 +51,78 @@ html, body {
     text-decoration: none;
     color: #00AFB5;
   }
-  
+
+ .sub {
+      display: none;
+  }
+
+.writing-samples:hover .sub {
+    display: block;
+}
+
+.bio {
+    text-align: center;
+    display: inline-block;
+
+
+}
+
+.bio-design {
+    padding-left: 15px;
+    text-align: right;
+    display: inline-block;
+
+
+}
+
+.bio-design2 {
+    padding-left: 20px;
+    text-align: right;
+    display: inline-block;
+
+
+}
+
+.bio-design3 {
+    padding-left: 25px;
+    text-align: right;
+    display: inline-block;
+
+
+}
+
+.bio-p {
+    padding-left: 15px;
+    text-align: right;
+    display: inline-block;
+
+}
+
+.headshot {
+    width: 150px;
+    height: 250px;
+    text-align: left;
+    display: inline-block;
+}
+
+#a, #g {
+    background-color: #6d6d6d;
+    color: #bdc3c7;
+    list-style: none;
+}
+
+#pic {
+    margin: +5% 0 0;
+    border: 3px solid black;
+}
+
+#wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+  list-style: none;
+}
+ 
   /* menu */
   
   .header .menu {
