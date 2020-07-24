@@ -58,9 +58,9 @@ function Delete() {
 
 		// If last sentence then display the first one, else move to the next
 		if(_PART == (_CONTENT.length - 1))
-        return setTimeout,
-		document.getElementById("text").innerHTML = "Welcome to the Arman Archive",
-		document.getElementById("social").innerHTML = "<a href='https://www.linkedin.com/in/bailey-arman-7b7766162/ target='blank' ><i class='fab fa-linkedin-in fa-3x' style='color:#131112;'  ></i></a>",
+		return setTimeout,
+		document.getElementById("text").innerHTML = "Bailey Arman",
+		document.getElementById("social").innerHTML = "Technical Writer, Editor, Communicator, and Freelancer",
         document.getElementById("fade-button").innerHTML = "<a href='images/BA_resume.pdf' target= '_blank' style= ' color: #131112; margin-right: 5px; font-size: 30px;'>Download Resume</a> <a href='writing-samples.html' style= 'color: #131112; margin-left: 5px; font-size: 30px;'>View My Work</a>";
 
 
