@@ -86,11 +86,6 @@
   padding-right: 15px;
 }
 
- /* #resume {
-  padding-left: 15px;
-  padding-right: 15px;
-} */
-
 #resume-text {
   padding-left: 15px;
   padding-right: 15px;
@@ -365,6 +360,7 @@
 
   h1 {
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
   .space {
@@ -381,10 +377,6 @@
      align-content: center;
  }
 
-  .hero {
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-
   .nav-link {
       color: #00AFB5;
       background-color: #131112;
@@ -398,3 +390,80 @@
     color: #00AFB5;
     background-color: #131112;
   }
+
+  body{
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  .container{
+    width: 50%;
+    margin: 0 auto;
+  }
+  @keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-webkit-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-moz-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-o-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+
+ 
+  
+  .bar{
+    background-color: #EEE;
+    padding: 2px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    width: 400px;
+    font-size: 12px;
+    color: #FFF;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  }
+  .bar::before{
+    content:  attr(data-skill);
+    background-color: #00AFB5;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+  }
+  
+  .bar.front::before{
+    background-color: #131112;
+  }
+  .bar.back::before{
+    background-color: #242022;
+  }
+  
+  .bar.learning::before{
+    width: calc(20% - 10px);
+  }
+  .bar.basic::before{
+    width: calc(40% - 10px);
+  }
+  .bar.intermediate::before{
+    width: calc(60% - 10px);
+  }
+  .bar.advanced::before{
+    width: calc(80% - 10px);
+  }
+  .bar.expert::before{
+    width: calc(100% - 10px);
+  }
+  
+

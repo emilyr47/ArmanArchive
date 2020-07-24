@@ -1,4 +1,4 @@
-function openTab(tabName) {
+	function openTab(tabName) {
 	var i, x;
 	x = document.getElementsByClassName("containerTab");
 	for (i = 0; i < x.length; i++) {
@@ -107,3 +107,4 @@ for(let i = 0; i < listItems.length; i++){
         toggleimages(listItems[i].dataset.class);
     });
 }
+
