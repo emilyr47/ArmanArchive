@@ -465,5 +465,20 @@
   .bar.expert::before{
     width: calc(100% - 10px);
   }
+
+  #center {
+    text-align: center;
+  }
+
+  #slides {
+    color: black;
+  }
+
+  #hero-resume {
+    background-image: url('../images/tornbook.png'); /* W3C */
+    width: 100%;
+
+  }
+  
   
 
