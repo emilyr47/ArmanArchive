@@ -1,3 +1,12 @@
+function openTab(tabName) {
+	var i, x;
+	x = document.getElementsByClassName("containerTab");
+	for (i = 0; i < x.length; i++) {
+	  x[i].style.display = "none";
+	}
+	document.getElementById(tabName).style.display = "block";
+  }
+
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -8,7 +17,7 @@ function myFunction() {
 }
 
 // List of sentences
-var _CONTENT = [ "Technical Writer.", "Editor.", "Communicator", "Bailey Arman." ];
+var _CONTENT = [ "Technical Writer.", "Editor.", "Communicator.", "Freelancer." , "Bailey Arman." ];
 
 // Current sentence being processed
 var _PART = 0;
@@ -50,7 +59,8 @@ function Delete() {
 		// If last sentence then display the first one, else move to the next
 		if(_PART == (_CONTENT.length - 1))
         return setTimeout,
-        document.getElementById("text").innerHTML = "Welcome to the Arman Archive",
+		document.getElementById("text").innerHTML = "Welcome to the Arman Archive",
+		document.getElementById("social").innerHTML = "<a href='https://www.linkedin.com/in/bailey-arman-7b7766162/ target='blank' ><i class='fab fa-linkedin-in fa-3x' style='color:#131112;'  ></i></a>",
         document.getElementById("fade-button").innerHTML = "<a href='images/BA_resume.pdf' target= '_blank' style= ' color: #131112; margin-right: 5px; font-size: 30px;'>Download Resume</a> <a href='writing-samples.html' style= 'color: #131112; margin-left: 5px; font-size: 30px;'>View My Work</a>";
 
 
@@ -67,3 +77,33 @@ function Delete() {
 
 // Start the typing effect on load
 _INTERVAL_VAL = setInterval(Type, 100);
+
+
+
+const listItems = document.querySelectorAll('.main li');
+const allimages = document.querySelectorAll('.main .container-fluid .images');
+
+function toggleActiveClass(active){
+    listItems.forEach(item => {
+      item.classList.remove('active');
+    })
+    active.classList.add('active');
+}
+
+function toggleimages(dataClass){
+    if(dataClass === 'all'){
+        for(let i = 0; i<allimages.length; i++){
+            allimages[i].style.display = 'block';
+        }
+    }else{
+        for(let i = 0; i<allimages.length; i++)
+            allimages[i].dataset.class === dataClass ? allimages[i].style.display = 'block' : allimages[i].style.display = 'none';
+    }
+}
+
+for(let i = 0; i < listItems.length; i++){
+    listItems[i].addEventListener('click', function(){
+        toggleActiveClass(listItems[i]);
+        toggleimages(listItems[i].dataset.class);
+    });
+}

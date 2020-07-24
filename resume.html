@@ -3,9 +3,17 @@
 
 <head>
     <title>ArmanArchive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+  <!-- Bootstrap -->  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/0a35ea8b6b.js" crossorigin="anonymous"></script>
+
+
+        <!-- jQuery --><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <!-- jQuery --> <script src="jquery-3.4.1.min.js"></script>
 
 
 </head>
@@ -25,24 +33,33 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li class="writing-samples"><a href="writing-samples.html">Writing Samples</a>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+
                 </li>
             </ul>
-        </header>
-
-    <!--End Navigation-->
+        </header><br><br<<br><br>
+            <!--End Navigation-->
     <section class="space">
         <div class="space"></div>
     </section>
-    <section class="resume">
-        <div class="resume">
-            <h1>Work Experience</h1>
-            <a href="images/BA_resume.pdf" target="_blank">Download PDF Resume</a>
 
-            <!--Job 1-->
-            <h3>Managing Editor</h3>
-            <h4>Backpack Communications (Formerly CLAgency), University of Minnesota</h4>
-            <h5>Jun 2018 - Dec 2018, Sept 2019 - May 2020, Minneapolis, MN</h5>
-            <ul>
+
+    <h1> Resume </h1><br><br>
+    <div id="resume">
+
+<!-- The grid: three columns -->
+<div class="row">
+        <div class="column" onclick="openTab('b1');" style="background:#131112;">Managing Editor<br><br>Backpack Communications<br>Jun 2018 - Dec 2018<br>Minneapolis, MN<br><br><a href="#about"><i class="fas fa-arrow-circle-down fa-2x" style="color: white;"></i></a> </div>
+        <div class="column" onclick="openTab('b2');" style="background:#00AFB5;">Managing Editor and Copy Editor<br><br>The Tower<br>Sept 2019 - May 2020<br>Minneapolis, MN<br><br><a href="#about"><i class="fas fa-arrow-circle-down fa-2x" style="color: white;"></i></a></div>
+        <div class="column" onclick="openTab('b3');" style="background:#131112;">Technical Writing Intern<br><br>Graco Inc. <br> Feb 2019 - Aug 2019 <br>Minneapolis, MN<br><br><a href="#about"><i class="fas fa-arrow-circle-down fa-2x" style="color: white;"></i></a></div>
+      </div>
+      
+      <!-- The expanding grid (hidden by default) -->
+      <div id="b1" class="containerTab" style="display:none;background:#131112">
+        <!-- If you want the ability to close the container, add a close button -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2 id="resume-text">Description</h2>
+        <ul>
                 <li>Edit PR stories in accordance with University and College policy</li>
                 <li>Manage six writers per semester, editing all three of their stories (18-20 stories for me
                     total) and ensuring they meet deadlines</li>
@@ -51,28 +68,31 @@
                 <li>Maintain the website and create or reorganize web content upon request</li>
                 <li>Create biannual newsletters in Salesforce to be sent to thousands of alumni, and later
                     compile statistics on recipient engagement with the newsletters</li>
-            </ul>
-            <!--End Job 1-->
+            </ul> 
+            
+            <h2 id="resume-text">Projects</h2>
 
-            <!--Job 2-->
-            <h3>Managing Editor and Copy Editor</h3>
-            <h4>The Tower, University of Minnesota</h4>
-            <h5>Sept 2019 - May 2020, Minneapolis, MN</h5>
-            <ul>
+
+        
+        
+        </div>
+      
+      <div id="b2" class="containerTab" style="display:none;background:#00AFB5">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2 id="resume-text">Description</h2>
+        <ul>
                 <li>Edit creative pieces for grammar and punctuation as well as theme and coherency</li>
                 <li>Develop the production schedule and manage printing bids</li>
                 <li>Delegate tasks to staff members while maintaining a positive team morale</li>
                 <li>Send out newsletters once a week that summarize the achievements of the past week and
                     prepare the team for upcoming tasks</li>
 
-            </ul>
-            <!--End Job 2-->
-
-            <!--Job 3-->
-            <h3>Technical Writing Intern</h3>
-            <h4>Graco Inc.</h4>
-            <h5>Feb 2019 - Aug 2019, Minneapolis, MN</h5>
-            <ul>
+            </ul>      </div>
+      
+      <div id="b3" class="containerTab" style="display:none;background:#131112">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2 id="resume-text">Description</h2>
+        <ul>
                 <li>Edit and create over 115 written manuals for a variety of lubrication products</li>
                 <ul class="square">
                     <li>This required me to become an expert in a matter of days on products that I
@@ -83,10 +103,12 @@
                 <li>Review and edit marketing documents and translated manuals</li>
                 <li>Work simultaneously on new manuals, written from scratch, and on outdated manuals,
                     bringing them up to current standards in format and writing</li>
-            </ul>
-            <!--End Job 3-->
-        </div>
-    </section><br><br><br><br><br><br><br><br><br><br><br><br>
+            </ul>      </div>
+
+
+
+    
+    </section><br><br><br><br><br><br><br><br><br><br><br><br> 
 
     <div class= "footer">
         <div class="container" >
@@ -104,6 +126,12 @@
               </div>
              <br><br> Bailey Arman 2020<br><br>
     </div>
+
+    <script src="javascript/function.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </body>
 

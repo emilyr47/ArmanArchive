@@ -21,14 +21,71 @@
 }
 
 #body-about, #body-resume, #writing-samples {
-    background-color: #E9CBAF;
+    background-color: #FBF5EF;
 }
 
   .bs-example{
     margin: 20px;
-    background-color: #E9CBAF;
+    background-color: #FBF5EF;
     color: #131112;
 
+}
+
+/* .card-body {
+  background:linear-gradient(0deg, rgba(231, 226, 228, 0.4), rgba(238, 234, 236, 0.4)), url(../images/daniel-alvasd-_RgeLpaIp7k-unsplash.jpg);
+}
+
+.card-body:hover {
+  background:linear-gradient(0deg, rgba(7, 7, 7, 0.3), rgba(5, 5, 5, 0.4));
+} */
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+  border: 50px, #00AFB5;
+
+}
+
+.containerTab {
+  color: white;
+  align-content: center;
+  margin-top: 15px;
+}
+.column:hover {
+ background-color: #00AFB5;  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+/* Closable button inside the image */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+  padding-right: 15px;
+}
+
+ /* #resume {
+  padding-left: 15px;
+  padding-right: 15px;
+} */
+
+#resume-text {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
 }
 
 
@@ -38,11 +95,19 @@
 }
 
 #text {
-	display: inline-block;
+  display: inline-block;
+  margin-top: 150px;
 	color: #131112;
     border-right: 3px solid #131112;
     font-size: 45px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#social {
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+  color: #131112;
 }
 
 #fade-button {
